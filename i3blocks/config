@@ -1,0 +1,78 @@
+# Memory
+[memory]
+command=scripts/memory
+label=MEM 
+interval=30
+color=#fab387
+
+
+# Guess the weather hourly
+[weather]
+label=󰖐 
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+
+
+# cpu_usage
+[cpu_usage]
+command=scripts/cpu_usage
+interval=10
+LABEL=CPU 
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
+#COLOR_NORMAL=#EBDBB2
+#COLOR_WARN=#FFFC00
+#COLOR_CRIT=#FF0000
+
+#temperature
+[temperature]
+command=scripts/temperature
+interval=10
+
+
+
+# Query my default IP address only on startup
+[ip]
+command=hostname -i | awk '{ print "IP:" $1 }'
+interval=once
+color=#a6e3a1
+
+[kbdd_layout]
+label=  
+command=scripts/kbdd_layout
+interval=persist
+color=#f5c2e7
+
+
+# battery
+[batterybar]
+command=scripts/batterybar
+label=bat:
+interval=5
+markup=pango
+min_width=bat: ■■■■■
+# Discharging colors low to high
+#C1=#FF0027
+#C2=#FF3B05
+#C3=#FFB923
+#C4=#FFD000
+#C5=#E4FF00
+#C6=#ADFF00
+#C7=#6DFF00
+#C8=#10BA00
+#CHARGING_COLOR=#00AFE3
+#FULL_COLOR=#FFFFFF
+#AC_COLOR=#535353
+
+# Calendar
+[calendar]
+command=scripts/calendar
+interval=1
+LABEL=󰃭 
+DATEFMT=+%d.%m.%Y 󱑆 %H:%M:%S
+HEIGHT=180
+WIDTH=220
+
+
