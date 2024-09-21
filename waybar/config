@@ -42,6 +42,7 @@
         "format": "{icon} {volume}%",
         "format-icons": ["", "", "󰕾", ""],
         "tooltip": false,
+		"format-muted":"󰝟"
     },
 
     "battery": {
@@ -57,12 +58,13 @@
 
     "cpu": {
         "interval":1,
-        "format": "{icon0} {icon1} {icon2} {icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+        "format": "{usage}%",
+        "tooltip": false
     },
 
     "memory": {
-        "format": "{}% "
+        "format": "{usage}%",
+		"tooltip": false
     },
     
     "network": {
