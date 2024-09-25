@@ -48,7 +48,9 @@
     "battery": {
         "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
-        "tooltip": false,
+        "tooltip": true,
+		"on-click": "upower -i $(upower -e | grep 'BAT' | grep 'time to full:')",
+		"interval":30
     },
 
     "clock": {
@@ -73,7 +75,11 @@
         "format-wifi": "  {essid} ",
         "format-ethernet": "󰈀 {ifname}",
         "format-disconnected": "󰌙 (No IP)",
+		"format-wireguard": "󰖂",
         "tooltip": false,
+		"interval": 5,
+		"exec": "sudo wg show",
+
     },
 
     "tray": {
