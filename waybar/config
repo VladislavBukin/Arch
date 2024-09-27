@@ -17,7 +17,8 @@
 
     "modules-right": [
         "wireplumber", 
-        "network", 
+        "hyprland/language",
+		"network", 
         "cpu",
         "battery",
         "clock",
@@ -29,6 +30,12 @@
         "tooltip": false,
         "exec": "$HOME/.config/waybar/get_distro_icon.sh",
     },
+
+	"hyprland/language":{
+		"format":"{}",
+		"format-en": "  en",
+		"format-ru": "  ru"
+	},
 
     "custom/spotify": {
         "format": " {}",
