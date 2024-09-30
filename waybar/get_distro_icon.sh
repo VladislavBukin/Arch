@@ -3,7 +3,7 @@
 declare -A distro_icons
 distro_icons=( 
     ["gentoo"]="󰣨"
-    ["arch"]="󰣇"
+    ["arch"]="󰣇 "
     ["artix"]=""
     ["arco"]=""
     ["ubuntu"]=""

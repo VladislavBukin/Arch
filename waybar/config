@@ -3,7 +3,7 @@
     "position": "top", 
     "height": 60,  
     "spacing": 5, 
-    "margin-bottom":-25,
+    "margin-bottom": 0,
 
     "modules-left": [
         "custom/distro-icon",

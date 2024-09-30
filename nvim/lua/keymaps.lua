@@ -8,7 +8,7 @@ kset('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { noremap = true })
 kset('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true })
 kset('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { noremap = true })
 kset('n', '<leader>fs', '<cmd>Telescope git_status<cr>', { noremap = true })
-
+kset('n', '<leader>fc', ':Telescope colorscheme<CR>', { noremap = true })
 -- ctrl-c ctrl-v
 kset('v', '<C-c>', 'y<Esc>')
 kset('v', '<C-x>', 'd')
