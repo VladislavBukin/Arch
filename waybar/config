@@ -55,6 +55,8 @@
     "battery": {
         "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
+		"format-charging": " {capacity}%",
+		"format-warning": "",
         "tooltip": true,
 		"on-click": "upower -i $(upower -e | grep 'BAT' | grep 'time to full:')",
 		"interval":30
