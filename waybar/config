@@ -8,7 +8,6 @@
     "modules-left": [
         "custom/distro-icon",
         "hyprland/workspaces",
-        "wlr/taskbar"
     ],
 
     "modules-center": [
@@ -56,7 +55,7 @@
         "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
 		"format-charging": " {capacity}%",
-		"format-warning": "",
+		"format-warning": " {capacity}",
         "tooltip": true,
 		"on-click": "upower -i $(upower -e | grep 'BAT' | grep 'time to full:')",
 		"interval":30
@@ -77,18 +76,20 @@
         "format": "{usage}%",
 		"tooltip": false
     },
-    
+	    
     "network": {
-        // "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "on-click": "alacritty -e nmtui",
-        "format-wifi": "  {essid} ",
-        "format-ethernet": "󰈀 {ifname}",
-        "format-disconnected": "󰌙 (No IP)",
-		"format-wireguard": "󰖂",
-        "tooltip": false,
+        "format-wifi" : "{icon}",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+        "format-ethernet": "󰀂",
+		"format-alt" : "󱛇",
+        "format-disconnected" : "󰖪",
+		"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+		"tooltip-format-disconnected": "Disconnected",
+		"on-click": "~/.config/wofi/wifi/wifi.sh &",
+        "on-click-right": "~/.config/wofi/wifi/wifinew.sh &",
 		"interval": 5,
-		"exec": "sudo wg show",
-
+		"nospacing": 1,
     },
 
     "tray": {
