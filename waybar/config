@@ -17,11 +17,20 @@
     "modules-right": [
         "wireplumber", 
         "hyprland/language",
-		"network", 
+		"network",
+		"custom/wg",
         "cpu",
         "battery",
         "clock",
     ],
+
+	"custom/wg":{
+		"format": "{}",
+		"exec": "$HOME/.config/waybar/wg-status.sh",
+		"return-type": "json",
+		"interval": 10,
+		"on-click": "$HOME/.config/waybar/wg-toggle.sh"
+	},
 
     "custom/distro-icon": {
         "format": "{}",
@@ -81,7 +90,6 @@
         "format-wifi" : "{icon}",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
         "format-ethernet": "󰀂",
-		"format-alt" : "󱛇",
         "format-disconnected" : "󰖪",
 		"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",

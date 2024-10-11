@@ -54,6 +54,7 @@ window#waybar {
 #clock,
 #custom-spotify,
 #custom-distro-icon,
+#custom-wg,
 #battery {
     color:  #d3869b;
     background: #09090F;
@@ -116,4 +117,16 @@ window#waybar {
     margin-left: 10px;
     font-size: 31px;
 	padding-left: 13px;
+}
+
+#custom-wg.up {
+    background-color: #09090F; /* Синий цвет для активного состояния */
+    color: blue;           /* Цвет текста белый */
+    /*padding: 5px;          Добавить немного отступа для кнопки */
+}
+
+#custom-wg.down {
+    background-color: #09090F;  /* Красный цвет для неактивного состояния */
+    color: red;           /* Цвет текста белый */
+    /*padding: 5px;          Добавить немного отступа для кнопки */
 }
