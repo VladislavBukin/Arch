@@ -95,7 +95,7 @@
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 		"tooltip-format-disconnected": "Disconnected",
 		"on-click": "~/.config/wofi/wifi/wifi.sh &",
-        "on-click-right": "~/.config/wofi/wifi/wifinew.sh &",
+        "on-click-right": "~/.config/wofi/wifi/wifi3.sh &",
 		"interval": 5,
 		"nospacing": 1,
     },
