@@ -28,7 +28,7 @@
 		"format": "{}",
 		"exec": "$HOME/.config/waybar/wg-status.sh",
 		"return-type": "json",
-		"interval": 10,
+		"interval": 2,
 		"on-click": "$HOME/.config/waybar/wg-toggle.sh"
 	},
 
