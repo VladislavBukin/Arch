@@ -15,4 +15,3 @@ bssid=$(nmcli device wifi list | sed -n '1!P' | cut -b 9- | wofi --floating -dme
 pass=$(echo "" | wofi --floating -dmenu -theme-str 'textbox-prompt-colon {str: "";}' -theme ${dir}/${theme}.rasi -p "Enter password")
 [ -z "$pass" ] && notify-send "🔑 Password not entered" && exit 1
 nmcli device wifi connect $bssid password $pass
-notify-send "📶 New WiFi Connected"
