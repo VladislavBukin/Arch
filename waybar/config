@@ -6,7 +6,6 @@
     "margin-bottom": 0,
 
     "modules-left": [
-        "custom/distro-icon",
         "hyprland/workspaces",
     ],
 
@@ -15,9 +14,9 @@
     ],
 
     "modules-right": [
-        "wireplumber", 
+        "tray",
+		"wireplumber", 
         "hyprland/language",
-		"network",
 		"custom/wg",
         "cpu",
         "battery",
@@ -94,15 +93,18 @@
 		"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 		"tooltip-format-disconnected": "Disconnected",
-		"on-click": "~/.config/wofi/wifi/wifi.sh &",
+		"on-click": "alacritty --class 'floating_nmtui' -e nmtui",
         "on-click-right": "~/.config/wofi/wifi/wifi3.sh &",
 		"interval": 5,
 		"nospacing": 1,
     },
 
+
     "tray": {
         "icon-size": 25,
-        "spacing": 13
+        "spacing": 13,
+		"max-items":1,
+		"display":"only",
     },
 
     "wlr/taskbar": {

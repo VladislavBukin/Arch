@@ -53,7 +53,10 @@ window#waybar {
 #wireplumber,
 #clock,
 #custom-spotify,
-#custom-distro-icon,
+#tray,
+#tray.tray-icon,
+#tray .tray-icon,
+/*#custom-distro-icon,*/
 #custom-wg,
 #battery {
     color:  #d3869b;
