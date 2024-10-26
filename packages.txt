@@ -229,6 +229,7 @@ gsettings-system-schemas 47.1-1
 gsl 2.8-1
 gsm 1.0.22-2
 gssdp 1.6.3-2
+gst-plugin-gtk 1.24.8-1
 gst-plugin-pipewire 1:1.2.5-1
 gst-plugins-bad-libs 1.24.8-1
 gst-plugins-base 1.24.8-1
@@ -1131,6 +1132,7 @@ readline 8.2.013-1
 redland 1:1.0.17-9
 rhash 1.4.4-1
 ripgrep 14.1.1-1
+ristretto 0.13.2-2
 rnnoise 1:0.2-1
 rofi 1.7.5-3
 rsync 3.3.0-2
@@ -1270,6 +1272,7 @@ ttf-tinos-nerd 3.2.1-2
 ttf-ubuntu-mono-nerd 3.2.1-2
 ttf-ubuntu-nerd 3.2.1-2
 ttf-victor-mono-nerd 3.2.1-2
+tumbler 4.18.2-2
 tzdata 2024b-2
 uasm 2.57-2
 udisks2 2.10.1-5
