@@ -10,8 +10,8 @@
     ],
 
     "modules-center": [
-        "custom/spotify",
-    ],
+		"custom/spotify",
+	],
 
     "modules-right": [
         "tray",
@@ -62,7 +62,6 @@
     "battery": {
         "format": "{icon}  {capacity}%",
         "format-icons": ["", "", "", "", ""],
-		"format-charging": " {capacity}%",
 		"format-warning": " {capacity}",
         "tooltip": true,
 		"on-click": "upower -i $(upower -e | grep 'BAT' | grep 'time to full:')",

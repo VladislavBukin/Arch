@@ -57,7 +57,39 @@ window#waybar {
 #tray.tray-icon,
 #tray .tray-icon,
 /*#custom-distro-icon,*/
-#custom-wg,
+#custom-wg {
+    color:  #d3869b;
+    background: #09090F;
+
+    margin-right: 10px;
+    border-radius: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+
+    margin-top: 10px;
+}
+
+
+#battery.charging {
+    color:  #89b4fa;
+    background: #09090F;
+
+    margin-right: 10px;
+    border-radius: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+
+    margin-top: 10px;
+}
+
 #battery {
     color:  #d3869b;
     background: #09090F;
