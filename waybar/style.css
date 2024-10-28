@@ -75,9 +75,8 @@ window#waybar {
 
 
 #battery.charging {
-    color:  #89b4fa;
-    background: #09090F;
-
+    background-color: #d3869b; 
+    color: #09090F;           
     margin-right: 10px;
     border-radius: 15px;
 
@@ -155,8 +154,8 @@ window#waybar {
 }
 
 #custom-wg.up {
-    background-color: #d3869b; /* Синий цвет для активного состояния */
-    color: #09090F;           /* Цвет текста белый */
+    background-color: #d3869b; 
+    color: #09090F;           
 }
 
 #custom-wg.down {
