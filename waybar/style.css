@@ -159,6 +159,6 @@ window#waybar {
 }
 
 #custom-wg.down {
-    background-color: #09090F;  /* Красный цвет для неактивного состояния */
-    color: #d3869b;          /* Цвет текста белый */
+    background-color: #09090F;  
+    color: #d3869b;          
 }
