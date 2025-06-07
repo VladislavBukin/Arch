@@ -1,5 +1,5 @@
 {
-    "layer": "top", 
+    "la1er": "top", 
     "position": "top", 
     "height": 60,  
     "spacing": 5, 
@@ -19,6 +19,7 @@
         "hyprland/language",
 		"custom/wg",
         "cpu",
+		"custom/bluetooth_battery",
         "battery",
         "clock",
     ],
@@ -59,6 +60,15 @@
         "tooltip": false,
 		"format-muted":"󰝟"
     },
+
+	"custom/bluetooth_battery": {
+		"format": "{}",
+		"return-type": "json",
+		"exec": "~/.config/waybar/bt_battery.sh",
+		"exec-if": "upower -e | grep -q 'headset'",
+		"interval": 30,
+		"tooltip": true
+	},
 
     "battery": {
         "format": "{icon}  {capacity}%",
