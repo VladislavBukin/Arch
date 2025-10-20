@@ -19,6 +19,7 @@
         "hyprland/language",
 		"custom/wg",
         "cpu",
+		"temperature",
 		"custom/bluetooth_battery",
         "battery",
         "clock",
@@ -66,8 +67,14 @@
 		"return-type": "json",
 		"exec": "~/.config/waybar/bt_battery.sh",
 		"exec-if": "upower -e | grep -q 'headset'",
-		"interval": 30,
+		"interval": 10,
 		"tooltip": true
+	},
+
+	"temperature": {
+		"thermal-zone": 0,
+		"format": " {temperatureC}°C",
+		"interval": 2
 	},
 
     "battery": {

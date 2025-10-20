@@ -14,7 +14,7 @@ BATTERY_LEVEL=$(upower -i $DEVICE_PATH | grep "percentage:" | awk '{print $2}' |
 
 # Если уровень заряда получен, выводим JSON
 if [ -n "$BATTERY_LEVEL" ]; then
-    echo "{\"text\": \"🎧 ${BATTERY_LEVEL}%\", \"tooltip\": \"Наушники: ${BATTERY_LEVEL}%\", \"class\": \"plugged\"}"
+    echo "{\"text\": \" ${BATTERY_LEVEL}%\", \"tooltip\": \"Наушники: ${BATTERY_LEVEL}%\", \"class\": \"plugged\"}"
 else
     # Если по какой-то причине уровень заряда не найден, выходим
     exit 0

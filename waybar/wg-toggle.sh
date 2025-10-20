@@ -6,5 +6,6 @@ if sudo wg show wg0 | grep -q "interface: wg0"; then
     sudo wg-quick down wg0
 else
     # Если интерфейс не активен, включаем его
-    sudo wg-quick up wg0
+	sudo resolvconf -u
+	sudo wg-quick up wg0
 fi
