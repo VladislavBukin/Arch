@@ -74,7 +74,20 @@ window#waybar {
     margin-top: 10px;
 }
 
-#custom-bluetooth_battery { 
+#custom-kbd_battery { 
+    color:      #d3869b;
+    background: #09090F;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#custom-mouse_battery { 
     color:      #d3869b;
     background: #09090F;
     margin-right: 10px;

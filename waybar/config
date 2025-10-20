@@ -20,7 +20,8 @@
 		"custom/wg",
         "cpu",
 		"temperature",
-		"custom/bluetooth_battery",
+		"custom/kbd_battery",
+		"custom/mouse_battery",
         "battery",
         "clock",
     ],
@@ -61,15 +62,23 @@
         "tooltip": false,
 		"format-muted":"󰝟"
     },
-
-	"custom/bluetooth_battery": {
+	
+	"custom/kbd_battery": {
 		"format": "{}",
 		"return-type": "json",
-		"exec": "~/.config/waybar/bt_battery.sh",
-		"exec-if": "upower -e | grep -q 'headset'",
-		"interval": 10,
-		"tooltip": true
+		"exec": "~/.config/waybar/get_battery.sh 'keyboard_dev_EA_83_A2_E0_7D_05' ' ' ",
+		"exec-if": "upower -e | grep -q 'keyboard'",
+		"interval": 60
 	},
+
+	"custom/mouse_battery":{
+		"format": "{}",
+		"return-type": "json",
+		"exec": "~/.config/waybar/get_battery.sh 'mouse_dev_78_87_12_71_4E_31' '󰦋 ' ",
+		"exec-if": "upower -e | grep -q 'mouse'",
+		"interval": 60
+	},
+
 
 	"temperature": {
 		"thermal-zone": 0,
